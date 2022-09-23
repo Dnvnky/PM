@@ -1,3 +1,6 @@
+// Programação Móvel
+// Aula 1 [23_09]
+
 package com.example.aula123_09
 
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +12,3 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 }
-
-// Programação Móvel
-// Aula 1 [23_09]
