@@ -1,3 +1,4 @@
+<!--
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout
@@ -7,8 +8,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <!-- Linear Layout [Center button middle of the screen] -->
 
     <LinearLayout
         android:id="@+id/l1"
@@ -34,8 +33,6 @@
             android:layout_weight="1"
             android:text="Button 2" />
     </LinearLayout>
-
-    <!--  -->
 
     <LinearLayout
         android:id="@+id/l2"
@@ -66,8 +63,6 @@
 
     </LinearLayout>
 
-    <!-- Button above Center area [Align right] -->
-
     <Button
         android:id="@+id/b6"
         android:layout_width="wrap_content"
@@ -75,4 +70,49 @@
         android:layout_above="@id/l1"
         android:layout_alignParentRight="true"
         android:text="Button 6" />
+</RelativeLayout>
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<LinearLayout
+    android:id="@+id/l1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    >
+    <Button
+        android:text="button1"
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:text="button2"
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
+
+<Button
+    android:layout_above="@id/l1"
+    android:layout_marginBottom="10dp"
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    />
+
 </RelativeLayout>

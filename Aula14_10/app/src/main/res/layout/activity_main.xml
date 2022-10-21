@@ -44,4 +44,12 @@
         android:text="Button 1"
         tools:ignore="UsingOnClickInXml" />
 
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Button 2" />
+
 </RelativeLayout>
